@@ -1,0 +1,11 @@
+<h2>Favoritos</h2>
+<div>
+  <input type="text" [(ngModel)]="filtro" placeholder="Nombre a filtrar" />
+</div>
+<!-- <pre>{{filtro}}</pre> -->
+<ul>
+  <li *ngFor="let fav of filtrarPorFiltro(filtro)">
+    <img [src]="fav.foto" alt="">
+    <span>{{fav.nombre}}</span>
+  </li>
+</ul>
